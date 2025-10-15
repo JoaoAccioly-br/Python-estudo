@@ -21,9 +21,21 @@ for i in lista:
 '''
 
 # While - Realiza uma repetição enquanto uma condição for atendida
-
-num = 0
+'''
+num = 10
 
 while num > 6:
-    num = input('Insira um número de 1 a 10: ')
+    num = int(input('Insira um número de 1 a 10: '))
 
+'''
+
+# Loop infinito, só para quando o break for acionado
+'''
+while True: 
+    num = int(input('Insira um número de 1 a 10: '))
+    if num < 1 or num > 10:
+        print('Número inválido, tente novamente!')
+    else:
+        print('Número válido!')
+        break
+'''

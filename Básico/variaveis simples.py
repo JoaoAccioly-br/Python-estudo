@@ -8,7 +8,7 @@ altura = 1.75 #Float
 '''
 # Váriaveis locais e globais
 
-Media = 0 #Variável global
+'''Media = 0 #Variável global
 total = 0 #Variável global
 
 def media_nota():
@@ -20,5 +20,16 @@ def media_nota():
     print(Media) # Retorna str
 
 media_nota()
+'''
 
+'''
+num = int(input('Insira um número')) # Transforma o input string em int
+num2 = float(input('Insira um número com vírgula')) # Transforma o input string em float    
+'''
 
+'''
+num = 10
+num2 = 3
+
+print(num // num2) # Retorna somente o valor inteiro da divisão!
+'''
