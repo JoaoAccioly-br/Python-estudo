@@ -40,7 +40,7 @@ nomes2 = [['paulo','fabio','claudio'],['maria','ana','joana']]
 print(len(nomes2)) # 2
 print(nomes2[0][2]) # fabio
 
-# Para colocar e retirar de forma dinâmica, podemos usar os atributos append e pop
+# Para colocar e retirar de forma dinâmica, podemos usar os métodos append e pop
 
 comidas.append('batata')
 comidas.append('macarrão')
@@ -84,5 +84,6 @@ quantos_produtos()
 lista = [1,2,6,7,8,5,4,3,5,1,5,6,2,5,4,6,2,1,2,3,0,6,7,0]
 num = int(input('insira o número que deseja saber'))
 lista.count(num)
+
 
 
