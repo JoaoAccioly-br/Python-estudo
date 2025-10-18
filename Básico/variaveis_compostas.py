@@ -19,7 +19,7 @@ print(nomes[0]) # joao
 # Também é possível pesquisar por fatiamento (Uma porção da lista)
 
 print(idades[0:2]) # [12 , 17] não se é pegado o valor do índice 2 (Continha básica: 2 - 0 = 2 valores)
-print(idades[:2) # mesmo retorno
+print(idades[:2]) # mesmo retorno
 print(idades[2:]) # vai do indice 2 até o final
 
 # Caso seja números, é possível realizar operações dentro
@@ -66,7 +66,7 @@ def media_notas():
   notas = []
   
   for x in range(4):
-    n = input(f"insira a sua nota do bimestre {i+1}")
+    n = input(f"insira a sua nota do bimestre {x+1}")
     notas.append(n)
   return sum(notas) / len(notas)
 

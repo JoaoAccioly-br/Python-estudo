@@ -16,6 +16,24 @@ def somar(n1, n2):
     return n1 + n2
 print(somar(10, 20))
 '''
+
+# Também podemos dar dicas de tipos para os parametros
+
+'''
+def somar(n1: int, n2: int) -> int:
+    return n1 + n2
+print(somar(10, 20))
+'''
+
+# Além de também podermos criar um texto de documentação para a função
+'''
+def somar(n1: int, n2: int) -> int:
+    """Função que soma dois números inteiros e retorna o resultado."""
+    return n1 + n2
+print(somar(10, 20))
+print(somar.__doc__)
+'''
+
 # Também é possível criar funções com parametros padrões ou opcionais
 '''
 def somar(n1=0, n2=0):
@@ -24,7 +42,7 @@ print(somar(10)) # Nesse caso o n2 vai assumir o valor padrão 0
 print(somar()) # Nesse caso o n1 e o n2 vão assumir o valor padrão
 '''
 
-# Também é possível criar funções com um número indeterminado de parametros
+# Também é possível criar funções com um número indeterminado de parametros utilizando *
 
 '''
 def somar(*num):
