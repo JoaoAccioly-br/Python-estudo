@@ -16,6 +16,8 @@ for i in range(len(ceps)):
     resposta = requests.get(api.format(cep=ceps[i]))
     if resposta.status_code == 200:
         dados.append(resposta.json())
+    elif resposta.status_code >= 400:
+        print(f'Erro ao consultar o cep {ceps[i]}: {resposta.status_code}')
 print(dados)
 
 with open('Testes api\ceps\ceps.json', 'w', encoding='utf-8') as open_archive:
