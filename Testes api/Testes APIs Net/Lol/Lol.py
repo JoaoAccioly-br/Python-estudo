@@ -11,7 +11,7 @@ elif response.status_code >= 400:
     print('Character not found')
 
 with open(f'Testes api/Testes APIs Net/Lol/{champion}.json', 'w', encoding='utf-8') as create_file:
-    json.dump(data,create_file, ensure_ascii='utc-8', indent=4)
+    json.dump(data,create_file, ensure_ascii=False, indent=4)
 
 with open(f'Testes api/Testes APIs Net/Lol/{champion}.json', 'r', encoding='utf-8') as open_file:
     content = json.load(open_file)
